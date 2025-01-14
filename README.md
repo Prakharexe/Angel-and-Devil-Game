@@ -7,7 +7,7 @@ This repository contains a Python implementation of the **Angel and Devil** game
 The implementation includes the following features:
 
 1. **Create an Empty Grid**: Initialize an empty `n x n` grid with all entries set to 0.
-2. **Update Grid with Input**: Populate the grid based on user input, marking cells as "angel" or "devil."
+2. **Update Grid with Input**: Populate the grid based on user input, marking cells as "angel" or "devil" with safeguards for valid inputs.
 3. **Calculate Neighbor Mean**: Compute the mean value of neighboring cells for any given cell.
 4. **Update Game Configuration**: Update the grid to the next generation based on the calculated neighbor means and predefined rules.
 
@@ -25,7 +25,7 @@ The implementation includes the following features:
 
 ## File Overview
 
-- `a3q2.py`: The main Python script containing the game logic.
+- `Angel and Devil.py`: The main Python script containing the game logic.
 
 ## How to Use
 
@@ -37,7 +37,7 @@ The implementation includes the following features:
 
 2. Run the program:
    ```bash
-   python a3q2.py
+   python Angel\ and\ Devil.py
    ```
 
 3. Follow the on-screen prompts to input cell values and observe the game's evolution.
@@ -48,7 +48,7 @@ The implementation includes the following features:
   Creates an `n x n` grid with all entries initialized to 0.
 
 - **`update_grid_with_input(G, val)`**:
-  Updates the grid `G` based on user input for angel/devil cell positions.
+  Updates the grid `G` based on user input for angel/devil cell positions. Ensures valid inputs within grid boundaries.
 
 - **`cal_neighbor_mean(x, y, G)`**:
   Calculates the mean value of neighbors for the cell at position `(x, y)`.
